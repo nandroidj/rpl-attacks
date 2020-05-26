@@ -15,8 +15,12 @@ Proxima Lectura:
 - [ ] [Contiki-NG wiki](https://github.com/contiki-ng/contiki-ng/wiki)
 
 
-# Links de Referencia
+## Repositorios de Referencia
 
 [Repositorio de brianma94 - Contiki-ng-attacks](https://github.com/brianma94/Contiki-ng-Attacks)
 
 [Repositorio de dhondta - rpl-attacks [Contiki-OS]](https://github.com/dhondta/rpl-attacks#quick-installation)
+
+## Lista de ataques en la capa de Ruteo
+
+![Tipos de ataques en RPL.](https://www.researchgate.net/publication/315659937/figure/tbl1/AS:668464368861186@1536385733022/Summary-of-RPL-Attacks-and-Countermeasures.png)
