@@ -13,3 +13,9 @@ Proxima Lectura:
 - [ ] [flood attack cooja](https://blog.imaginea.com/simulation-of-rpl-dos-attack-in-cooja/)
 - [ ] [Wormhole Attack](https://www.ijert.org/research/wormhole-attack-and-its-variants-in-wireless-sensor-network-a-survey-IJERTV3IS080837.pdf)
 - [ ] [Contiki-NG wiki](https://github.com/contiki-ng/contiki-ng/wiki)
+
+
+# Links de Referencia
+
+[Repositorio de brianma94 - Contiki-ng-attacks](https://github.com/brianma94/Contiki-ng-Attacks)
+[Repositorio de dhondta - rpl-attacks [Contiki-OS]](https://github.com/dhondta/rpl-attacks#quick-installation)
