@@ -22,7 +22,8 @@ Proxima Lectura:
 [Repositorio de dhondta - rpl-attacks [Contiki-OS]](https://github.com/dhondta/rpl-attacks#quick-installation)
 
 ## Lista de ataques en la capa de Ruteo
+![Division de ataques en RPL](https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-030-34515-0_25/MediaObjects/478753_1_En_25_Fig3_HTML.png)
 
 ![Tipos de ataques en RPL.](https://www.researchgate.net/publication/315659937/figure/tbl1/AS:668464368861186@1536385733022/Summary-of-RPL-Attacks-and-Countermeasures.png)
 
-![Division de ataques en RPL](https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-030-34515-0_25/MediaObjects/478753_1_En_25_Fig3_HTML.png)
+
