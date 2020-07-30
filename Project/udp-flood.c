@@ -67,7 +67,7 @@ PROCESS_THREAD(flooding_process, ev, data)
            // rpl_icmp6_dis_output(NULL);
             first = false;
         }
-        printf("DIO packets sent: %d\n",dis_sent_flood);
+        //printf("DIO packets sent: %d\n",dis_sent_flood);
         etimer_reset_with_new_interval(&timer, 0);
     }
   }
