@@ -18,6 +18,10 @@ Proxima Lectura:
 ## Repositorios de Referencia
 
 [Repositorio de brianma94 - Contiki-ng-attacks](https://github.com/brianma94/Contiki-ng-Attacks)
+* rank decrease attack 
+* hf attack
+* hello flood attack
+* grayhole attack
 
 [Repositorio de dhondta - rpl-attacks [Contiki-OS]](https://github.com/dhondta/rpl-attacks#quick-installation)
 
