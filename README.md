@@ -3,13 +3,14 @@
 
 ## En Cours !
 
-Cosas que agregue
-PlotsPowerConsumption
+### Cosas que agregue
+* PlotsPowerConsumption
 - pwc_plot.py -> Archivo python para plotear
 - COOJA_POWER.md -> copy paste de los % de consumo de cooja
-Cosas que Faltan
-Hacer plots para TX y ON
-Simular grayhole
+
+### Cosas que Faltan
+* Hacer plots para TX y ON
+* Simular grayhole
 
 
 ## Investigacion
