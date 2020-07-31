@@ -6,7 +6,8 @@
 #include "sys/energest.h"
 #include "net/ipv6/simple-udp.h"
 #define LOG_MODULE "App"
-#define LOG_LEVEL LOG_LEVEL_INFO
+//#define LOG_LEVEL LOG_LEVEL_INFO
+#define LOG_LEVEL LOG_LEVEL_DBG
 #define WITH_SERVER_REPLY  1
 #define UDP_CLIENT_PORT	8765
 #define UDP_SERVER_PORT	5678
@@ -17,7 +18,7 @@
 static struct simple_udp_connection udp_conn;
 PROCESS(selector_process, "Selector");
 PROCESS(energest_process, "Monitoring tool");
-AUTOSTART_PROCESSES(&selector_process, &energest_process);
+AUTOSTART_PROCESSES(&selector_process);
 /*---------------------------------------------------------------------------*/
 static inline unsigned long
 to_seconds(uint64_t time)

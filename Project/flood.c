@@ -6,16 +6,18 @@
 #include "sys/energest.h"
 #include "net/ipv6/simple-udp.h"
 #define LOG_MODULE "App"
-#define LOG_LEVEL LOG_LEVEL_INFO
+//#define LOG_LEVEL LOG_LEVEL_INFO
+#define LOG_LEVEL LOG_LEVEL_DBG
 #define WITH_SERVER_REPLY  1
 #define UDP_CLIENT_PORT	8765
 #define UDP_SERVER_PORT	5678
-#define SEND_INTERVAL		  (450 * CLOCK_SECOND)/* 18 min */ /*(120 * CLOCK_SECOND)*/
+//#define SEND_INTERVAL		  (450 * CLOCK_SECOND)/* 18 min */ /*(120 * CLOCK_SECOND)*/
+#define SEND_INTERVAL		  (125 * CLOCK_SECOND)/* 5 */ /*(120 * CLOCK_SECOND)*/
 /*---------------------------------------------------------------------------*/
 static struct simple_udp_connection udp_conn;
 PROCESS(flooder_process, "Flooder");
 PROCESS(energest_process, "Monitoring tool");
-AUTOSTART_PROCESSES(&flooder_process, &energest_process);
+AUTOSTART_PROCESSES(&flooder_process);
 /*---------------------------------------------------------------------------*/
 static inline unsigned long
 to_seconds(uint64_t time)

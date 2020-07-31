@@ -47,7 +47,12 @@
 #include "uip-ds6-nbr.h"
 #include "net/routing/rpl-lite/rpl-icmp6-malicious.h"
 #include "net/routing/rpl-lite/rpl-icmp6-ids.h"
+
+#define DEBUG_PRINT 1
+
 /********** Data structures **********/
+
+
 
 /* Logical representation of a DAG Information Object (DIO.) */
 struct rpl_dio {

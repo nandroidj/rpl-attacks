@@ -11,6 +11,8 @@
 #include "sys/log.h"
 
 
+#define DEBUG_PRINT     1
+
 bool flood, flooding, select, selecting;
 enum rpl_message_min_length{
   DIO_length = 84,
