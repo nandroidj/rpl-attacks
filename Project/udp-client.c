@@ -52,6 +52,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
 {
 
 
+
   PROCESS_BEGIN();
   /* Initialize UDP connection */
   simple_udp_register(&udp_conn, UDP_CLIENT_PORT, NULL,

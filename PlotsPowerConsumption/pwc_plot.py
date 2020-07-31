@@ -8,9 +8,7 @@ from matplotlib import pyplot as plt
 MOTE_ID_LOCATION = 0
 DATA_TYPE_LOCATION = 1
 TIME_STAMP_LOCATION = 2
-DATA_LOCATION = 4
-
-
+DATA_LOCATION = 2
 
 ALL_MOTES = [
         "Z1_1",
@@ -85,6 +83,8 @@ def get_rx_data(motes, mote):
 def get_on_data(motes, mote):
     return process_data(motes, mote, DATA_TYPE[0])
 
+def get_rx_avg(motes):
+    return process_data(motes, "AVG", "RX")
 
 def main():
 
@@ -94,12 +94,18 @@ def main():
     data = read_data("./COOJA_POWER.md", ",")
 
     motes_rx = []
+    motes_tx = []
+    motes_on = []
     
     t = get_time_stamp(data)
     t = [float(x)*1e-6 for x in t]
     
     for mote in ALL_MOTES:
-        motes_rx.append([float(x) for x in get_rx_data(data, mote)])
+        motes_rx.append([float(x)*1e-6 for x in get_rx_data(data, mote)])
+        motes_tx.append([float(x)*1e-6 for x in get_tx_data(data, mote)])
+        motes_on.append([float(x)*1e-6 for x in get_on_data(data, mote)])
+
+    motes_rx_avg = ([float(x)*1e-6 for x in get_rx_avg(data)])
 
     fig = plt.figure()
     plt.plot(t, motes_rx[0], linewidth=2, color='b', label="Nodo 1")
@@ -111,11 +117,50 @@ def main():
     #plt.ylim((0, 10))
     plt.legend()
     plt.xlabel(r't[us]')
-    plt.ylabel(r'RX[%]')
+    plt.ylabel(r'RX[us]')
     plt.grid()
-   # plt.show()
+    plt.show()
     fig.savefig("rx_flood_attack.png", dpi=200)
 
+    fig = plt.figure()
+    plt.plot(t, motes_tx[0], linewidth=2, color='b', label="Nodo 1")
+    plt.plot(t, motes_tx[1], linewidth=2, color='r', label="Nodo 2")
+    plt.plot(t, motes_tx[2], linewidth=2, color='m', label="Nodo 3")
+    plt.plot(t, motes_tx[3], linewidth=2, color='g', label="Nodo 4")
+    plt.plot(t, motes_tx[4], linewidth=2, color='C1', label="Nodo 5")
+    plt.plot(t, motes_tx[5], linewidth=2, color='C5', label="Nodo 9")
+    #plt.ylim((0, 10))
+    plt.legend()
+    plt.xlabel(r't[us]')
+    plt.ylabel(r'TX[us]')
+    plt.grid()
+    plt.show()
+    fig.savefig("tx_flood_attack.png", dpi=200)
+
+    fig = plt.figure()
+    plt.plot(t, motes_on[0], linewidth=2, color='b', label="Nodo 1")
+    plt.plot(t, motes_on[1], linewidth=2, color='r', label="Nodo 2")
+    plt.plot(t, motes_on[2], linewidth=2, color='m', label="Nodo 3")
+    plt.plot(t, motes_on[3], linewidth=2, color='g', label="Nodo 4")
+    plt.plot(t, motes_on[4], linewidth=2, color='C1', label="Nodo 5")
+    plt.plot(t, motes_on[5], linewidth=2, color='C5', label="Nodo 9")
+    #plt.ylim((0, 10))
+    plt.legend()
+    plt.xlabel(r't[us]')
+    plt.ylabel(r'ON[us]')
+    plt.grid()
+    plt.show()
+    fig.savefig("on_flood_attack.png", dpi=200)
+
+    fig = plt.figure()
+    plt.plot(t, motes_rx_avg, linewidth=2, color='b', label="Nodo 1")
+    #plt.ylim((0, 10))
+    plt.legend()
+    plt.xlabel(r't[us]')
+    plt.ylabel(r'ON[us]')
+    plt.grid()
+    plt.show()
+    #fig.savefig("tx_flood_attack.png", dpi=200)
 
 
 if __name__ == "__main__":

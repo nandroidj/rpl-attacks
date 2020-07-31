@@ -66,7 +66,7 @@ PROCESS_THREAD(ids_process, ev, data)
   while(1) {
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
     /* 'hello' <-- Heartbeat UDP Request Payload */
-    snprintf(str, sizeof(str), "hello");
+    snprintf(str, sizeof(str), "hello nodes");
     /* Send HB Request to all the nodes */
     uint8_t i;
     for(i=0; i < (uint8_t)( sizeof(ids_nodes_ip) / sizeof(ids_nodes_ip[0])) && ids_nodes_ip[i].used; ++i){
