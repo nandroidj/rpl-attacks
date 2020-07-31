@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALL_MOTES	pwc_plot.py	/^ALL_MOTES = [$/;"	v
+DATA_LOCATION	pwc_plot.py	/^DATA_LOCATION = 4$/;"	v
+DATA_TYPE	pwc_plot.py	/^DATA_TYPE = [$/;"	v
+DATA_TYPE_LOCATION	pwc_plot.py	/^DATA_TYPE_LOCATION = 1$/;"	v
+MOTE_ID_LOCATION	pwc_plot.py	/^MOTE_ID_LOCATION = 0$/;"	v
+TIME_STAMP_LOCATION	pwc_plot.py	/^TIME_STAMP_LOCATION = 2$/;"	v
+get_on_data	pwc_plot.py	/^def get_on_data(motes, mote):$/;"	f
+get_rx_data	pwc_plot.py	/^def get_rx_data(motes, mote):$/;"	f
+get_time_stamp	pwc_plot.py	/^def get_time_stamp(data):$/;"	f
+get_tx_data	pwc_plot.py	/^def get_tx_data(motes, mote):$/;"	f
+main	pwc_plot.py	/^def main():$/;"	f
+process_data	pwc_plot.py	/^def process_data(data, mote, data_type):$/;"	f
+read_data	pwc_plot.py	/^def read_data(location, delimiter):$/;"	f

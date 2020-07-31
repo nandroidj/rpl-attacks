@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ATTACK_START	udp-flood.c	10;"	d	file:
+ATTACK_START	udp-selector.c	10;"	d	file:
+CONTIKI	Makefile	/^CONTIKI=..\/$/;"	m
+CONTIKI_PROJECT	Makefile	/^CONTIKI_PROJECT = udp-client udp-server flood selector ids ids-detector$/;"	m
+HEARTBEAT_INTERVAL	ids.c	17;"	d	file:
+LOG_LEVEL	flood.c	9;"	d	file:
+LOG_LEVEL	ids-detector.c	9;"	d	file:
+LOG_LEVEL	ids.c	10;"	d	file:
+LOG_LEVEL	selector.c	9;"	d	file:
+LOG_LEVEL	udp-client.c	10;"	d	file:
+LOG_LEVEL	udp-flood.c	8;"	d	file:
+LOG_LEVEL	udp-server.c	37;"	d	file:
+LOG_MODULE	flood.c	8;"	d	file:
+LOG_MODULE	ids-detector.c	8;"	d	file:
+LOG_MODULE	ids.c	9;"	d	file:
+LOG_MODULE	selector.c	8;"	d	file:
+LOG_MODULE	udp-client.c	9;"	d	file:
+LOG_MODULE	udp-server.c	36;"	d	file:
+PROCESS_THREAD	flood.c	/^PROCESS_THREAD(energest_process, ev, data)$/;"	f
+PROCESS_THREAD	flood.c	/^PROCESS_THREAD(flooder_process, ev, data)$/;"	f
+PROCESS_THREAD	ids-detector.c	/^PROCESS_THREAD(energest_process, ev, data)$/;"	f
+PROCESS_THREAD	ids-detector.c	/^PROCESS_THREAD(ids_detector_process, ev, data)$/;"	f
+PROCESS_THREAD	ids.c	/^PROCESS_THREAD(energest_process, ev, data)$/;"	f
+PROCESS_THREAD	ids.c	/^PROCESS_THREAD(ids_process, ev, data)$/;"	f
+PROCESS_THREAD	selector.c	/^PROCESS_THREAD(energest_process, ev, data)$/;"	f
+PROCESS_THREAD	selector.c	/^PROCESS_THREAD(selector_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-client.c	/^PROCESS_THREAD(energest_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-client.c	/^PROCESS_THREAD(udp_client_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-flood.c	/^PROCESS_THREAD(energest_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-flood.c	/^PROCESS_THREAD(flooding_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-flood.c	/^PROCESS_THREAD(udp_client_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-selector.c	/^PROCESS_THREAD(energest_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-selector.c	/^PROCESS_THREAD(selecting_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-selector.c	/^PROCESS_THREAD(udp_client_process, ev, data)$/;"	f
+PROCESS_THREAD	udp-server.c	/^PROCESS_THREAD(udp_server_process, ev, data)$/;"	f
+REFRESH_INTERVAL	ids-detector.c	14;"	d	file:
+REFRESH_INTERVAL	ids.c	16;"	d	file:
+SEND_INTERVAL	flood.c	13;"	d	file:
+SEND_INTERVAL	ids-detector.c	13;"	d	file:
+SEND_INTERVAL	ids.c	15;"	d	file:
+SEND_INTERVAL	selector.c	13;"	d	file:
+SEND_INTERVAL	udp-client.c	15;"	d	file:
+SEND_INTERVAL	udp-flood.c	9;"	d	file:
+SEND_INTERVAL	udp-selector.c	9;"	d	file:
+UDP_CLIENT_PORT	flood.c	11;"	d	file:
+UDP_CLIENT_PORT	ids-detector.c	11;"	d	file:
+UDP_CLIENT_PORT	ids.c	13;"	d	file:
+UDP_CLIENT_PORT	selector.c	11;"	d	file:
+UDP_CLIENT_PORT	udp-client.c	13;"	d	file:
+UDP_CLIENT_PORT	udp-server.c	40;"	d	file:
+UDP_SERVER_PORT	flood.c	12;"	d	file:
+UDP_SERVER_PORT	ids-detector.c	12;"	d	file:
+UDP_SERVER_PORT	ids.c	14;"	d	file:
+UDP_SERVER_PORT	selector.c	12;"	d	file:
+UDP_SERVER_PORT	udp-client.c	14;"	d	file:
+UDP_SERVER_PORT	udp-server.c	41;"	d	file:
+WITH_SERVER_REPLY	flood.c	10;"	d	file:
+WITH_SERVER_REPLY	ids-detector.c	10;"	d	file:
+WITH_SERVER_REPLY	ids.c	12;"	d	file:
+WITH_SERVER_REPLY	selector.c	10;"	d	file:
+WITH_SERVER_REPLY	udp-client.c	12;"	d	file:
+WITH_SERVER_REPLY	udp-server.c	39;"	d	file:
+to_seconds	flood.c	/^to_seconds(uint64_t time)$/;"	f	file:
+to_seconds	ids-detector.c	/^to_seconds(uint64_t time)$/;"	f	file:
+to_seconds	ids.c	/^to_seconds(uint64_t time)$/;"	f	file:
+to_seconds	selector.c	/^to_seconds(uint64_t time)$/;"	f	file:
+to_seconds	udp-client.c	/^to_seconds(uint64_t time)$/;"	f	file:
+to_seconds	udp-flood.c	/^to_seconds(uint64_t time)$/;"	f	file:
+to_seconds	udp-selector.c	/^to_seconds(uint64_t time)$/;"	f	file:
+udp_conn	flood.c	/^static struct simple_udp_connection udp_conn;$/;"	v	typeref:struct:simple_udp_connection	file:
+udp_conn	ids-detector.c	/^static struct simple_udp_connection udp_conn;$/;"	v	typeref:struct:simple_udp_connection	file:
+udp_conn	ids.c	/^static struct simple_udp_connection udp_conn;$/;"	v	typeref:struct:simple_udp_connection	file:
+udp_conn	selector.c	/^static struct simple_udp_connection udp_conn;$/;"	v	typeref:struct:simple_udp_connection	file:
+udp_conn	udp-client.c	/^static struct simple_udp_connection udp_conn;$/;"	v	typeref:struct:simple_udp_connection	file:
+udp_conn	udp-server.c	/^static struct simple_udp_connection udp_conn;$/;"	v	typeref:struct:simple_udp_connection	file:
+udp_rx_callback	flood.c	/^udp_rx_callback(struct simple_udp_connection *c,$/;"	f	file:
+udp_rx_callback	ids-detector.c	/^udp_rx_callback(struct simple_udp_connection *c,$/;"	f	file:
+udp_rx_callback	ids.c	/^udp_rx_callback(struct simple_udp_connection *c,$/;"	f	file:
+udp_rx_callback	selector.c	/^udp_rx_callback(struct simple_udp_connection *c,$/;"	f	file:
+udp_rx_callback	udp-client.c	/^udp_rx_callback(struct simple_udp_connection *c,$/;"	f	file:
+udp_rx_callback	udp-server.c	/^udp_rx_callback(struct simple_udp_connection *c,$/;"	f	file:
+udp_server_process	udp-server.c	/^AUTOSTART_PROCESSES(&udp_server_process);$/;"	v

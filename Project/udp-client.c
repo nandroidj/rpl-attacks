@@ -7,8 +7,9 @@
 #include "sys/log.h"
 #include "sys/energest.h"
 #define LOG_MODULE "App"
-#define LOG_LEVEL LOG_LEVEL_INFO
+//#define LOG_LEVEL LOG_LEVEL_INFO
 
+#define LOG_LEVEL LOG_LEVEL_DBG
 #define WITH_SERVER_REPLY  1
 #define UDP_CLIENT_PORT	8765
 #define UDP_SERVER_PORT	5678
@@ -19,7 +20,7 @@ static struct simple_udp_connection udp_conn;
 /*---------------------------------------------------------------------------*/
 PROCESS(udp_client_process, "UDP client");
 PROCESS(energest_process, "Monitoring tool");
-AUTOSTART_PROCESSES(&udp_client_process, &energest_process);
+AUTOSTART_PROCESSES(&udp_client_process);
 /*---------------------------------------------------------------------------*/
 static inline unsigned long
 to_seconds(uint64_t time)
@@ -35,8 +36,9 @@ udp_rx_callback(struct simple_udp_connection *c,
          const uint8_t *data,
          uint16_t datalen)
 {
-  
   LOG_INFO("Received request '%.*s' from ", datalen, (char *) data);
+
+
   LOG_INFO_6ADDR(sender_addr);
   simple_udp_sendto(&udp_conn, data, datalen, sender_addr);
 #if LLSEC802154_CONF_ENABLED
